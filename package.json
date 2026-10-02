@@ -1,0 +1,16 @@
+{
+  "name": "halol-hisobchi-bot",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Halol Hisobchi Telegram bot va lead (ariza) tizimi",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "check": "node --check bot.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Halol Hisobchi",
+  "license": "UNLICENSED"
+}

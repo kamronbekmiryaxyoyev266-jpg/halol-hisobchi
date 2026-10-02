@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+  <meta name="theme-color" content="#002d8d"/>
+  <title>Halol Hisobchi — Buxgalteriya, Audit va Moliya Xizmatlari</title>
+  <meta name="description" content="Toshkentda 100% shaffof va qonuniy buxgalteriya, chuqur audit hamda moliya xizmatlari. Jarimalar xavfini 0 ga tushiring va moddiy kafolatga ega bo'ling."/>
+  
+  <link rel="canonical" href="https://halolhisobchi.uz/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="uz_UZ"/>
+  <meta property="og:title" content="Halol Hisobchi — Buxgalteriya, Audit va Moliya Xizmatlari"/>
+  <meta property="og:description" content="Toshkentda shaffof va qonuniy buxgalteriya, audit hamda moliya xizmatlari. Narxni onlayn hisoblang."/>
+  <meta property="og:url" content="https://halolhisobchi.uz/"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23002d8d'/%3E%3Cpath d='M20 18v28M44 18v28M20 32h24' stroke='%2377fca3' stroke-width='7' stroke-linecap='round' fill='none'/%3E%3C/svg%3E"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Halol Hisobchi",
+    "url": "https://halolhisobchi.uz/",
+    "telephone": "+998959535545",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ko'kcha Darvoza ko'chasi, 314/308",
+      "addressLocality": "Toshkent",
+      "addressCountry": "UZ"
+    },
+    "openingHours": "Mo-Sa 09:00-18:00",
+    "sameAs": ["https://t.me/halol_hisobchi", "https://instagram.com/halol_hisobchi"]
+  }
+  </script>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Telegram bot uchun haqiqiy QR-kod -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#e2e7ff",
+            "tertiary-fixed": "#c9e6ff",
+            "surface-container-low": "#f2f3ff",
+            "error": "#ba1a1a",
+            "outline-variant": "#c4c5d6",
+            "surface": "#faf8ff",
+            "secondary-fixed-dim": "#59df89",
+            "surface-tint": "#2553d2",
+            "primary": "#002d8d",
+            "on-error": "#ffffff",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#eef0ff",
+            "surface-dim": "#d2d9f4",
+            "secondary": "#006d38",
+            "surface-container-highest": "#dae2fd",
+            "on-surface": "#131b2e",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed-variant": "#004c6e",
+            "on-primary-fixed-variant": "#003ab1",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#434654",
+            "on-background": "#131b2e",
+            "outline": "#747686",
+            "on-secondary-fixed-variant": "#005228",
+            "primary-fixed": "#dce1ff",
+            "tertiary-container": "#005378",
+            "on-primary-container": "#acbcff",
+            "background": "#faf8ff",
+            "on-tertiary-fixed": "#001e2f",
+            "on-tertiary-container": "#75c8ff",
+            "inverse-surface": "#283044",
+            "surface-variant": "#dae2fd",
+            "on-secondary-fixed": "#00210d",
+            "on-secondary-container": "#00723a",
+            "surface-container": "#eaedff",
+            "secondary-fixed": "#77fca3",
+            "secondary-container": "#74f9a0",
+            "primary-fixed-dim": "#b6c4ff",
+            "surface-bright": "#faf8ff",
+            "on-primary-fixed": "#001550",
+            "primary-container": "#0040c1",
+            "tertiary": "#003b57",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "inverse-primary": "#b6c4ff",
+            "tertiary-fixed-dim": "#89ceff"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .pb-safe { padding-bottom: env(safe-area-inset-bottom, 16px); }
+      .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+    }
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #faf8ff;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c4c5d6;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #747686;
+    }
+    .modal-backdrop {
+      animation: fadeIn 0.2s ease-out forwards;
+    }
+    .modal-panel {
+      animation: slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    /* --- Qo'shimchalar: ankor offset, fokus, harakat, raqamlar --- */
+    html { scroll-padding-top: 6rem; }
+    :focus-visible { outline: 3px solid #0040c1 !important; outline-offset: 2px; }
+    .tnum, input[type="tel"] { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' on, 'cv05' on; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface flex flex-col min-h-screen relative antialiased selection:bg-primary-fixed selection:text-primary">
+
+  <!-- ================= TOP HEADER / NAVIGATION ================= -->
+  <header class="fixed top-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high/60 shadow-[0_1px_10px_rgba(0,0,0,0.03)] pt-safe">
+    <div class="max-w-7xl mx-auto h-16 sm:h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform flex-shrink-0">
+          <span class="material-symbols-outlined text-[24px]">account_balance</span>
+        </div>
+        <div class="flex flex-col min-w-0">
+          <div class="flex items-center gap-1.5">
+            <span class="font-extrabold text-primary text-lg sm:text-xl tracking-tight leading-none">Halol Hisobchi</span>
+            <span class="material-symbols-outlined text-secondary text-[18px]" title="Tasdiqlangan">verified</span>
+          </div>
+          <span class="text-xs text-on-surface-variant font-medium tracking-wide mt-0.5">Buxgalteriya • Audit • Moliya</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-semibold text-on-surface-variant">
+        <a href="#asosiy" class="px-3 py-2 rounded-xl hover:text-primary hover:bg-surface-container transition-all">Asosiy</a>
+        <a href="#xizmatlar" class="px-3 py-2 rounded-xl hover:text-primary hover:bg-surface-container transition-all">Xizmatlar</a>
+        <a href="#afzalliklar" class="px-3 py-2 rounded-xl hover:text-primary hover:bg-surface-container transition-all">Afzalliklar</a>
+        <a href="#hisoblash-kalkulyatori" class="px-3 py-2 rounded-xl hover:text-primary hover:bg-surface-container transition-all">Kalkulyator</a>
+        <a href="#keyslar" class="px-3 py-2 rounded-xl hover:text-primary hover:bg-surface-container transition-all">Keyslar</a>
+        <a href="#savollar" class="px-3 py-2 rounded-xl hover:text-primary hover:bg-surface-container transition-all">Savol-Javob</a>
+        <a href="#aloqa-forma" class="px-3 py-2 rounded-xl hover:text-primary hover:bg-surface-container transition-all">Aloqa</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        <!-- Call Button -->
+        <a href="tel:+998959535545" class="h-10 sm:h-11 px-3 sm:px-4 bg-secondary text-on-secondary rounded-full flex items-center justify-center gap-2 shadow-[0_4px_14px_rgba(0,109,56,0.25)] hover:bg-secondary/90 active:scale-95 transition-all text-xs sm:text-sm font-bold">
+          <span class="material-symbols-outlined text-[18px]">call</span>
+          <span class="hidden sm:inline">+998 95 953 55 45</span>
+          <span class="sm:hidden">Qo'ng'iroq</span>
+        </a>
+
+        <!-- Fast Calc CTA -->
+        <a href="#hisoblash-kalkulyatori" class="hidden md:flex h-10 sm:h-11 px-4 bg-primary-fixed text-on-primary-fixed rounded-full items-center justify-center gap-1.5 hover:bg-primary-fixed-dim transition-all text-xs sm:text-sm font-bold">
+          <span class="material-symbols-outlined text-[18px]">calculate</span>
+          <span>Hisoblash</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-1 w-full pt-20 sm:pt-24 pb-24 lg:pb-12" id="asosiy">
+
+    <!-- Top Ambient Lights -->
+    <div class="relative w-full overflow-hidden pointer-events-none">
+      <div class="absolute -top-36 left-1/2 -translate-x-1/2 w-[850px] h-[400px] bg-gradient-to-b from-primary-fixed/40 via-surface-container-high/30 to-transparent blur-3xl -z-10"></div>
+      <div class="absolute top-24 right-4 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+    </div>
+
+    <!-- 1. HERO SECTION -->
+    <section class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16">
+      
+      <!-- Trust Chip -->
+      <div class="flex items-center justify-center lg:justify-start mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest shadow-sm border border-surface-container-high text-secondary text-xs sm:text-sm font-semibold">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+          </span>
+          <span class="material-symbols-outlined text-[18px]">verified</span>
+          <span>100% Shaffof va Halol Standartlar</span>
+          <span class="text-on-surface-variant">•</span>
+          <span class="text-primary font-bold">Toshkent, O'zbekiston</span>
+        </div>
+      </div>
+
+      <!-- Hero Grid Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Column: Value Proposition -->
+        <div class="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <div class="inline-flex items-center gap-2 mb-3">
+            <span class="h-1 w-6 bg-secondary rounded-full hidden lg:inline-block"></span>
+            <span class="text-xs sm:text-sm uppercase tracking-widest font-bold text-secondary">HALOL HISOBCHI BOSHQARUV TIZIMI</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-primary tracking-tight leading-[1.15] mb-5 max-w-2xl">
+            Biznesingiz hisob-kitobini <span class="text-secondary underline decoration-secondary-fixed decoration-wavy decoration-2">professionallarga</span> topshiring!
+          </h1>
+
+          <p class="text-base sm:text-lg text-on-surface-variant max-w-xl mb-8 leading-relaxed">
+            1C hisobi, chuqurlashtirilgan audit va moliya xizmatlari. 
+            Jarimalar xavfini <strong class="text-secondary font-bold">0 ga</strong> tushiring, soliq qonunchiligida mustahkam himoyaga ega bo'ling va halol mezonlar bilan biznesingizni o'stiring.
+          </p>
+
+          <!-- Primary Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto mb-10">
+            <a href="#hisoblash-kalkulyatori" class="w-full sm:w-auto px-8 py-4 bg-secondary text-on-secondary font-bold text-sm sm:text-base rounded-2xl flex items-center justify-center gap-2.5 shadow-[0_6px_20px_rgba(0,109,56,0.3)] hover:bg-secondary/90 transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[22px]">calculate</span>
+              <span>Xizmat narxini hisoblash</span>
+            </a>
+            
+            <a href="#aloqa-forma" class="w-full sm:w-auto px-7 py-4 bg-surface-container-lowest text-primary font-bold text-sm sm:text-base rounded-2xl flex items-center justify-center gap-2.5 shadow-sm border border-surface-container-high hover:bg-surface-container-low transition-all">
+              <span class="material-symbols-outlined text-[22px]">support_agent</span>
+              <span>Bepul konsultatsiya olish</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Ribbon -->
+          <div class="grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-xl p-4 rounded-3xl bg-surface-container-lowest border border-surface-container-high shadow-sm">
+            <div class="flex flex-col items-center p-2 text-center border-r border-surface-container-high">
+              <span class="text-xl sm:text-2xl font-extrabold text-primary">100%</span>
+              <span class="text-xs text-on-surface-variant font-medium mt-0.5">Moddiy kafolat</span>
+            </div>
+            <div class="flex flex-col items-center p-2 text-center border-r border-surface-container-high">
+              <span class="text-xl sm:text-2xl font-extrabold text-secondary">0 Xavf</span>
+              <span class="text-xs text-on-surface-variant font-medium mt-0.5">Jarima xavfi</span>
+            </div>
+            <div class="flex flex-col items-center p-2 text-center">
+              <span class="text-xl sm:text-2xl font-extrabold text-primary">10+ Yil</span>
+              <span class="text-xs text-on-surface-variant font-medium mt-0.5">Katta tajriba</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive FinTech Visual Banner Card -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-md bg-surface-container-lowest rounded-3xl p-6 sm:p-7 shadow-2xl border border-surface-container-high overflow-hidden">
+            
+            <!-- Ambient Card Glows -->
+            <div class="absolute -top-16 -right-16 w-48 h-48 bg-primary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-secondary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+
+            <!-- Card Header -->
+            <div class="flex items-center justify-between relative z-10 pb-4 border-b border-surface-container-low">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary shadow-sm">
+                  <span class="material-symbols-outlined text-[28px]">payments</span>
+                </div>
+                <div>
+                  <h2 class="text-base sm:text-lg font-bold text-primary leading-tight">Halol Hisobchi</h2>
+                  <p class="text-xs text-secondary font-semibold">Buxgalteriya • Audit • Moliya</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Faol
+              </span>
+            </div>
+
+            <!-- Interactive Service List Inside Card -->
+            <div class="space-y-3 relative z-10 mt-4">
+              
+              <button onclick="openServiceModal('buxgalteriya')" class="w-full flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-low/70 hover:bg-surface-container transition-all group text-left">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs group-hover:bg-primary group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-[22px]">receipt_long</span>
+                  </div>
+                  <div>
+                    <span class="text-sm font-bold text-on-surface block">Buxgalteriya xizmati</span>
+                    <span class="text-xs text-on-surface-variant">1C 8.3 & EHF & Hisobotlar</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </button>
+
+              <button onclick="openServiceModal('moliya')" class="w-full flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-low/70 hover:bg-surface-container transition-all group text-left">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs group-hover:bg-primary group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-[22px]">trending_up</span>
+                  </div>
+                  <div>
+                    <span class="text-sm font-bold text-on-surface block">Moliyachi xizmati</span>
+                    <span class="text-xs text-on-surface-variant">Cash Flow & P&L boshqaruvi</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </button>
+
+              <button onclick="openServiceModal('audit')" class="w-full flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-low/70 hover:bg-surface-container transition-all group text-left">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs group-hover:bg-primary group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-[22px]">fact_check</span>
+                  </div>
+                  <div>
+                    <span class="text-sm font-bold text-on-surface block">Audit xizmati</span>
+                    <span class="text-xs text-on-surface-variant">Xatarlarni 100% bartaraf etish</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </button>
+
+              <button onclick="openServiceModal('soliq')" class="w-full flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-low/70 hover:bg-surface-container transition-all group text-left">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs group-hover:bg-primary group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-[22px]">price_check</span>
+                  </div>
+                  <div>
+                    <span class="text-sm font-bold text-on-surface block">Soliq maslahatlari</span>
+                    <span class="text-xs text-on-surface-variant">Qonuniy optimizatsiya</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-secondary text-[22px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </button>
+
+            </div>
+
+            <!-- Mini Banner Callout -->
+            <div class="mt-5 p-4 rounded-2xl bg-primary text-on-primary flex items-center justify-between cursor-pointer hover:bg-primary-container transition-colors" onclick="openGuaranteeModal()">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-fixed text-[26px]">handshake</span>
+                <div>
+                  <span class="text-xs text-on-primary-container block font-medium">Bizning asosiy mezon:</span>
+                  <span class="text-sm font-bold">Halollikni qadrlaydiganlar uchun!</span>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-[20px] opacity-80">info</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROMO BANNER: TELEGRAM SMART AUDIT BOT (DEEP LINK) -->
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary via-primary-container to-secondary p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="relative z-10 flex items-center gap-4 sm:gap-6">
+          <div class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center flex-shrink-0 text-secondary-fixed shadow-inner">
+            <span class="material-symbols-outlined text-[36px]">verified_user</span>
+          </div>
+          <div>
+            <span class="inline-block px-3 py-0.5 rounded-full bg-secondary-fixed text-primary text-xs font-black tracking-wide uppercase mb-1">
+              🎁 BEPUL EKSPRESS-DIAGNOSTIKA
+            </span>
+            <h3 class="text-xl sm:text-2xl font-black tracking-tight leading-tight">
+              Biznesingizda soliq jarimalari xavfi bormi?
+            </h3>
+            <p class="text-xs sm:text-sm text-white/90 mt-1 max-w-xl">
+              2 daqiqada Telegram aqlli botimizda 4 ta savolga javob bering va korxonangiz soliq xatarlarini bepul bilib oling!
+            </p>
+          </div>
+        </div>
+        <div class="relative z-10 flex-shrink-0 w-full md:w-auto">
+          <a href="https://t.me/halol_hisobchi_ariza_bot?start=audit" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-7 py-4 rounded-2xl bg-secondary hover:bg-secondary/90 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-lg shadow-black/20 transition-all hover:scale-105 active:scale-95">
+            <span class="material-symbols-outlined text-[22px]">smart_toy</span>
+            <span>Telegram Botda Tekshirish</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. CORE SERVICES SECTION (WITH TABS & MODALS) -->
+    <section class="w-full bg-surface-container-low py-16 sm:py-20" id="xizmatlar">
+      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Heading -->
+        <div class="flex flex-col items-center text-center mb-10">
+          <div class="inline-flex items-center gap-2 mb-2">
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+            <span class="text-xs sm:text-sm uppercase tracking-widest text-secondary font-bold">XIZMATLAR RO'YXATI</span>
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-primary max-w-2xl">
+            Biznesingiz muvaffaqiyati uchun to'liq moliyaviy tizim
+          </h2>
+          <p class="text-sm sm:text-base text-on-surface-variant max-w-xl mt-2">
+            Har bir operatsiya qonun doirasida, aniq va shaffof tamoyillar asosida yuritiladi.
+            Batafsil ma'lumot olish uchun xizmatni tanlang.
+          </p>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-6 p-1.5 bg-surface-container-lowest rounded-2xl shadow-sm border border-surface-container-high">
+            <button onclick="filterServices('all')" id="tab-all" class="service-tab active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-primary text-on-primary transition-all">
+              Barcha xizmatlar (6)
+            </button>
+            <button onclick="filterServices('buxgalteriya')" id="tab-buxgalteriya" class="service-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-medium text-on-surface hover:bg-surface-container transition-all">
+              Buxgalteriya
+            </button>
+            <button onclick="filterServices('moliya')" id="tab-moliya" class="service-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-medium text-on-surface hover:bg-surface-container transition-all">
+              Moliya & Boshqaruv
+            </button>
+            <button onclick="filterServices('audit')" id="tab-audit" class="service-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-medium text-on-surface hover:bg-surface-container transition-all">
+              Audit
+            </button>
+            <button onclick="filterServices('soliq')" id="tab-soliq" class="service-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-medium text-on-surface hover:bg-surface-container transition-all">
+              Soliq
+            </button>
+          </div>
+        </div>
+
+        <!-- 6 Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="servicesGrid">
+          
+          <!-- Card 1: Buxgalteriya xizmati -->
+          <div class="service-card group bg-surface-container-lowest p-6 sm:p-7 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high" data-category="buxgalteriya">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all shadow-xs">
+                  <span class="material-symbols-outlined text-[32px]">receipt_long</span>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">1C 8.3 & EHF</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-on-surface mb-2.5 group-hover:text-primary transition-colors">Buxgalteriya xizmati</h3>
+              <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">
+                Barcha oylik, choraklik va yillik soliq hisobotlari, birlamchi hujjatlar, kadrlar va bank operatsiyalarini 100% to'g'ri yuritish.
+              </p>
+
+              <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-on-surface-variant font-medium">
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>1C 8.3 tizimida to'liq hisob</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Elektron hisobvaraq-fakturalar (EHF)</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Kadrlar va oylik taqsimoti (my.mehnat)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-surface-container-low">
+              <button onclick="openServiceModal('buxgalteriya')" class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-primary font-bold text-xs sm:text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">info</span>
+                <span>Batafsil ma'lumot</span>
+              </button>
+              <button onclick="selectServiceDirect('Buxgalteriya xizmati')" class="w-full py-2.5 px-4 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm hover:bg-secondary/90 transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">check</span>
+                <span>Ushbu xizmatni tanlash</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Moliyachi xizmati -->
+          <div class="service-card group bg-surface-container-lowest p-6 sm:p-7 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high" data-category="moliya">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all shadow-xs">
+                  <span class="material-symbols-outlined text-[32px]">trending_up</span>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">P&L & Cash Flow</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-on-surface mb-2.5 group-hover:text-primary transition-colors">Moliyachi xizmati</h3>
+              <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">
+                Pul oqimlarini (Cash Flow) uzluksiz boshqarish, kassa uzilishlarini bartaraf etish, har bir mahsulot rentabelligini aniqlash.
+              </p>
+
+              <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-on-surface-variant font-medium">
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Moliya oqimlari (Cash Flow) taqsimoti</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Foyda & Zarar (P&L) oylik tahlili</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Unit-iqtisodiyot va xarajat optimizatsiyasi</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-surface-container-low">
+              <button onclick="openServiceModal('moliya')" class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-primary font-bold text-xs sm:text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">info</span>
+                <span>Batafsil ma'lumot</span>
+              </button>
+              <button onclick="selectServiceDirect('Moliyachi xizmati')" class="w-full py-2.5 px-4 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm hover:bg-secondary/90 transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">check</span>
+                <span>Ushbu xizmatni tanlash</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Audit xizmati -->
+          <div class="service-card group bg-surface-container-lowest p-6 sm:p-7 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high" data-category="audit">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all shadow-xs">
+                  <span class="material-symbols-outlined text-[32px]">fact_check</span>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">100% Xavfsizlik</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-on-surface mb-2.5 group-hover:text-primary transition-colors">Audit xizmati</h3>
+              <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">
+                Mustaqil audit tekshiruvi, o'tgan 1-3 yillik xatoliklarni aniqlash, soliq tekshiruvlaridan oldin xavflarni 0 ga tushirish.
+              </p>
+
+              <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-on-surface-variant font-medium">
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Kompleks o'tgan davrlar auditi</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Soliq xatarlarini oldindan bartaraf qilish</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Xatolar reyestri va yechimlar rejasi</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-surface-container-low">
+              <button onclick="openServiceModal('audit')" class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-primary font-bold text-xs sm:text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">info</span>
+                <span>Batafsil ma'lumot</span>
+              </button>
+              <button onclick="selectServiceDirect('Audit xizmati')" class="w-full py-2.5 px-4 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm hover:bg-secondary/90 transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">check</span>
+                <span>Ushbu xizmatni tanlash</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Soliq maslahatlari -->
+          <div class="service-card group bg-surface-container-lowest p-6 sm:p-7 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high" data-category="soliq">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all shadow-xs">
+                  <span class="material-symbols-outlined text-[32px]">price_check</span>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">Imtiyoz & Himoya</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-on-surface mb-2.5 group-hover:text-primary transition-colors">Soliq maslahatlari</h3>
+              <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">
+                Qonuniy soliq optimizatsiyasi, davlat imtiyozlaridan to'g'ri foydalanish hamda asossiz penya va talabnomalardan himoyalanish.
+              </p>
+
+              <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-on-surface-variant font-medium">
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Soliq yukini qonuniy kamaytirish</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Tekshiruvlarda malakali hamrohlik</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Asossiz talabnomalarni bekor qilish</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-surface-container-low">
+              <button onclick="openServiceModal('soliq')" class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-primary font-bold text-xs sm:text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">info</span>
+                <span>Batafsil ma'lumot</span>
+              </button>
+              <button onclick="selectServiceDirect('Soliq maslahatlari')" class="w-full py-2.5 px-4 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm hover:bg-secondary/90 transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">check</span>
+                <span>Ushbu xizmatni tanlash</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Tashqi Iqtisodiy Faoliyat (Import / Eksport) -->
+          <div class="service-card group bg-surface-container-lowest p-6 sm:p-7 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high" data-category="buxgalteriya soliq">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all shadow-xs">
+                  <span class="material-symbols-outlined text-[32px]">flight_takeoff</span>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">Import / Eksport</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-on-surface mb-2.5 group-hover:text-primary transition-colors">Tashqi Iqtisodiy Faoliyat</h3>
+              <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">
+                Bojxona deklaratsiyalari (GTD), valyuta shartnomalari, konvertatsiya hisoblari va xalqaro hamkorlar bilan to'liq hisob-kitob.
+              </p>
+
+              <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-on-surface-variant font-medium">
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Bojxona GTD hisobi va valyuta nazorati</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Eksport QQS 0 stavkasi va qaytarib olish</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Valyuta kurs farqlarini to'g'ri aks ettirish</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-surface-container-low">
+              <button onclick="openServiceModal('eksport')" class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-primary font-bold text-xs sm:text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">info</span>
+                <span>Batafsil ma'lumot</span>
+              </button>
+              <button onclick="selectServiceDirect('Tashqi Iqtisodiy Faoliyat (Import/Eksport)')" class="w-full py-2.5 px-4 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm hover:bg-secondary/90 transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">check</span>
+                <span>Ushbu xizmatni tanlash</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: E-tijorat & Marketplace Hisobi -->
+          <div class="service-card group bg-surface-container-lowest p-6 sm:p-7 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high" data-category="buxgalteriya moliya">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all shadow-xs">
+                  <span class="material-symbols-outlined text-[32px]">shopping_cart</span>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">Uzum & Market</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-on-surface mb-2.5 group-hover:text-primary transition-colors">E-tijorat & Uzum Hisobi</h3>
+              <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">
+                Uzum Market, Yandex va onlayn do'konlar sotuvchilari uchun komissiyalar, qaytarishlar, ombor va kassa integratsiyasi.
+              </p>
+
+              <ul class="space-y-2.5 mb-6 text-xs sm:text-sm text-on-surface-variant font-medium">
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Uzum va boshqa agregatorlar hisoboti</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Komissiya va logistika xarajatlari tahlili</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <span>Onlayn kassa va fiskal cheklar tartibi</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 pt-4 border-t border-surface-container-low">
+              <button onclick="openServiceModal('etijorat')" class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-primary font-bold text-xs sm:text-sm hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">info</span>
+                <span>Batafsil ma'lumot</span>
+              </button>
+              <button onclick="selectServiceDirect('E-tijorat & Uzum Market hisobi')" class="w-full py-2.5 px-4 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm hover:bg-secondary/90 transition-all flex items-center justify-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]">check</span>
+                <span>Ushbu xizmatni tanlash</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. AFZALLIKLAR & ISHONCH MARKAZI (WHY CHOOSE US & GUARANTEES) -->
+    <section class="w-full py-16 sm:py-20" id="afzalliklar">
+      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- Left Visual Highlight Card -->
+          <div class="lg:col-span-5 flex flex-col gap-4">
+            <div class="p-8 sm:p-10 rounded-3xl bg-primary text-on-primary relative overflow-hidden shadow-2xl">
+              <!-- Glow -->
+              <div class="absolute -right-8 -bottom-8 w-44 h-44 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+              
+              <div class="relative z-10">
+                <span class="px-3.5 py-1.5 rounded-full bg-on-primary/10 text-on-primary text-xs font-bold inline-block mb-4">
+                  100% Halollik Mezoni
+                </span>
+                
+                <h3 class="text-2xl sm:text-3xl font-extrabold leading-tight mb-4">
+                  Nega tadbirkorlar bizga ishonishadi?
+                </h3>
+                
+                <p class="text-sm sm:text-base text-on-primary-container leading-relaxed mb-6">
+                  Biz har bir korxonaning moliyaviy siri va hisobini omonat deb bilamiz. 
+                  Yashirin ustamalar, noaniqliklar va mas'uliyatsizlikdan butunlay yiroq, yuridik jihatdan mustahkamlangan xizmat ko'rsatamiz.
+                </p>
+
+                <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-md flex items-center gap-3.5 mb-6">
+                  <div class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+                    <span class="material-symbols-outlined text-[26px]">gavel</span>
+                  </div>
+                  <div>
+                    <h4 class="text-sm sm:text-base font-bold text-white">100% Moddiy javobgarlik</h4>
+                    <p class="text-xs text-on-primary-container">Xatolik bo'lsa, jarimani biz to'laymiz</p>
+                  </div>
+                </div>
+
+                <button onclick="openGuaranteeModal()" class="w-full py-3 px-5 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm hover:bg-secondary/90 transition-all flex items-center justify-center gap-2 shadow-md">
+                  <span class="material-symbols-outlined text-[18px]">verified_user</span>
+                  <span>Kafolat va Shartnoma shartlarini ko'rish</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 4 Pillars Grid -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            
+            <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-high shadow-sm hover:shadow-md transition-all">
+              <div class="w-12 h-12 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[28px]">balance</span>
+              </div>
+              <h4 class="text-base sm:text-lg font-bold text-primary mb-2">Halol va shaffof tamoyillar</h4>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Barcha hisobotlar qat'iy omonatdorlik va to'g'rilik poydevorida tuziladi. Shubhali sxemalar va qalloblikka o'rin yo'q.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-high shadow-sm hover:shadow-md transition-all">
+              <div class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[28px]">lock</span>
+              </div>
+              <h4 class="text-base sm:text-lg font-bold text-primary mb-2">Mutlaq konfidensiallik (NDA)</h4>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Rasmiy NDA shartnomasi asosida korxonangiz moliyaviy siri, aylanmalari va tijoriy ma'lumotlari to'liq himoyalanadi.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-high shadow-sm hover:shadow-md transition-all">
+              <div class="w-12 h-12 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[28px]">shield</span>
+              </div>
+              <h4 class="text-base sm:text-lg font-bold text-primary mb-2">0 Jarima kafolati</h4>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Buxgalteriya jamoamiz xatosi sababli vujudga kelgan soliq jarimalari shartnomaga ko'ra to'liq biz tomonimizdan qoplanadi.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-high shadow-sm hover:shadow-md transition-all">
+              <div class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[28px]">support_agent</span>
+              </div>
+              <h4 class="text-base sm:text-lg font-bold text-primary mb-2">Shaxsiy bosh buxgalter</h4>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Sizga doimiy tarzda malakali mutaxassis biriktiriladi. Savollaringizga ish soatlarida zudlik bilan javob beriladi.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. HAQIQIY KEYSLAR & MIJOZLAR NATIJALARI (CASE STUDIES) -->
+    <section class="w-full bg-surface-container-low py-16 sm:py-20" id="keyslar">
+      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col items-center text-center mb-12">
+          <div class="inline-flex items-center gap-2 mb-2">
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+            <span class="text-xs sm:text-sm uppercase tracking-widest text-secondary font-bold">AMALIY NATIJALAR</span>
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-primary">
+            Bizneslar biz bilan qanday natijaga erishdi?
+          </h2>
+          <p class="text-sm sm:text-base text-on-surface-variant max-w-lg mt-2">
+            Quruq va'dalar emas, balki rasmiy hujjatlar va raqamlarda aks etgan haqiqiy yutuqlar.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Case 1 -->
+          <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-7 border border-surface-container-high shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold">Ulgurji Savdo</span>
+                <span class="text-xs text-on-surface-variant font-medium">Toshkent sh.</span>
+              </div>
+              <h4 class="text-lg font-bold text-primary mb-2">"Grand Distribution" MCHJ</h4>
+              <p class="text-xs sm:text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Avvalgi buxgalter yo'l qo'ygan xatolik sababli soliq organi tomonidan <strong>48 000 000 so'm</strong> asossiz penya hisoblangan.
+              </p>
+              <div class="p-3.5 rounded-2xl bg-secondary/10 border border-secondary/20 mb-4">
+                <span class="text-xs font-bold text-secondary uppercase block mb-1">Erishilgan Natija:</span>
+                <p class="text-xs sm:text-sm font-semibold text-secondary">
+                  ✓ Qayta audit qilinib, hisob-kitoblar to'g'rilandi va 48 mln so'mlik talabnoma to'liq bekor qilindi.
+                </p>
+              </div>
+            </div>
+            <div class="text-xs text-on-surface-variant font-medium pt-3 border-t border-surface-container-low flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              <span>Hamkorlik muddati: 2 yildan ortiq</span>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-7 border border-surface-container-high shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">Ishlab chiqarish</span>
+                <span class="text-xs text-on-surface-variant font-medium">Samarqand sh.</span>
+              </div>
+              <h4 class="text-lg font-bold text-primary mb-2">"Baraka Furniture" XK</h4>
+              <p class="text-xs sm:text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Tushum katta bo'lishiga qaramay, har oy kassa uzilishi (кассовый разрыв) kuzatilar va xomashyo olishga pul yetmay qolar edi.
+              </p>
+              <div class="p-3.5 rounded-2xl bg-secondary/10 border border-secondary/20 mb-4">
+                <span class="text-xs font-bold text-secondary uppercase block mb-1">Erishilgan Natija:</span>
+                <p class="text-xs sm:text-sm font-semibold text-secondary">
+                  ✓ Cash Flow va P&L tizimi joriy etildi, xarajatlar 14% qisqarib, 3 oy ichida kassa uzilishi to'xtatildi.
+                </p>
+              </div>
+            </div>
+            <div class="text-xs text-on-surface-variant font-medium pt-3 border-t border-surface-container-low flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+              <span>Hamkorlik muddati: 1.5 yil</span>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-7 border border-surface-container-high shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold">IT & Eksport</span>
+                <span class="text-xs text-on-surface-variant font-medium">IT Park</span>
+              </div>
+              <h4 class="text-lg font-bold text-primary mb-2">"Silk Road Soft" MCHJ</h4>
+              <p class="text-xs sm:text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Yangi ochilgan IT kompaniya uchun AQSH va Yevropa mijozlari bilan xalqaro shartnomalar, valyuta hisobi va soliq imtiyozlari kerak edi.
+              </p>
+              <div class="p-3.5 rounded-2xl bg-secondary/10 border border-secondary/20 mb-4">
+                <span class="text-xs font-bold text-secondary uppercase block mb-1">Erishilgan Natija:</span>
+                <p class="text-xs sm:text-sm font-semibold text-secondary">
+                  ✓ IT Park soliq imtiyozlari rasmiylashtirildi, 0 dan 1C va valyuta nazorati avtomatlashtirildi.
+                </p>
+              </div>
+            </div>
+            <div class="text-xs text-on-surface-variant font-medium pt-3 border-t border-surface-container-low flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+              <span>Hamkorlik muddati: 1 yildan ortiq</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. INTERACTIVE PRICING CALCULATOR -->
+    <section class="w-full py-16 sm:py-20" id="hisoblash-kalkulyatori">
+      <div class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col items-center text-center mb-10">
+          <div class="inline-flex items-center gap-2 mb-2">
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+            <span class="text-xs sm:text-sm uppercase tracking-widest text-secondary font-bold">HISOB-KITOB SMETASI</span>
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-primary">
+            Xizmat Narxini Real Vaqtda Hisoblang
+          </h2>
+          <p class="text-sm sm:text-base text-on-surface-variant max-w-lg mt-1">
+            Korxona shakli, xodimlar va oylik aylanmangizni belgilang — tizim aniq paket va xarajatlar taqsimotini hisoblab beradi.
+          </p>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-10 shadow-xl border border-surface-container-high grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Parameters Input Form (7 cols) -->
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            
+            <!-- Company Type -->
+            <div>
+              <label class="text-sm font-bold text-on-surface block mb-2">1. Korxona yuridik shakli:</label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="companyTypeContainer">
+                <button type="button" onclick="setCompanyType('MCHJ-aylanma', this)" class="type-btn py-2.5 px-3 rounded-xl bg-primary text-white font-bold text-xs sm:text-sm transition-all text-center">
+                  MCHJ (Aylanma)
+                </button>
+                <button type="button" onclick="setCompanyType('MCHJ-qqs', this)" class="type-btn py-2.5 px-3 rounded-xl bg-surface-container text-on-surface font-semibold text-xs sm:text-sm transition-all text-center">
+                  MCHJ (QQS 12%)
+                </button>
+                <button type="button" onclick="setCompanyType('YaTT', this)" class="type-btn py-2.5 px-3 rounded-xl bg-surface-container text-on-surface font-semibold text-xs sm:text-sm transition-all text-center">
+                  YaTT
+                </button>
+                <button type="button" onclick="setCompanyType('IT-Park', this)" class="type-btn py-2.5 px-3 rounded-xl bg-surface-container text-on-surface font-semibold text-xs sm:text-sm transition-all text-center">
+                  IT Park / XK
+                </button>
+              </div>
+            </div>
+
+            <!-- Staff Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="staffRange" class="text-sm font-bold text-on-surface">2. Xodimlar soni (mehnat daftarchasi):</label>
+                <span class="text-base font-extrabold text-primary" id="staffCountLabel">5 kishi</span>
+              </div>
+              <input type="range" min="1" max="60" value="5" id="staffRange" oninput="updateCalculator()" class="w-full accent-primary h-2 bg-surface-container-high rounded-lg cursor-pointer"/>
+              <div class="flex justify-between text-xs text-on-surface-variant font-medium mt-1">
+                <span>1 kishi</span>
+                <span>30 kishi</span>
+                <span>60+ kishi</span>
+              </div>
+            </div>
+
+            <!-- Operations / Invoices Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="opsRange" class="text-sm font-bold text-on-surface">3. Oylik operatsiyalar / EHF soni:</label>
+                <span class="text-base font-extrabold text-secondary" id="operationsLabel">50 ta</span>
+              </div>
+              <input type="range" min="10" max="600" step="10" value="50" id="opsRange" oninput="updateCalculator()" class="w-full accent-secondary h-2 bg-surface-container-high rounded-lg cursor-pointer"/>
+              <div class="flex justify-between text-xs text-on-surface-variant font-medium mt-1">
+                <span>10 ta</span>
+                <span>300 ta</span>
+                <span>600+ ta</span>
+              </div>
+            </div>
+
+            <!-- Extra Services -->
+            <div>
+              <label class="text-sm font-bold text-on-surface block mb-2">4. Qo'shimcha professional modullar:</label>
+              <div class="space-y-2.5">
+                <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+                  <input type="checkbox" id="chkAudit" onchange="updateCalculator()" class="w-5 h-5 rounded text-secondary focus:ring-0 cursor-pointer"/>
+                  <div class="flex flex-col">
+                    <span class="text-xs sm:text-sm font-bold text-on-surface">Yillik doimiy audit tekshiruvi</span>
+                    <span class="text-xs text-on-surface-variant">Soliq xatarlarini 0 darajada ushlab turish</span>
+                  </div>
+                </label>
+
+                <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+                  <input type="checkbox" id="chkFinance" onchange="updateCalculator()" class="w-5 h-5 rounded text-secondary focus:ring-0 cursor-pointer"/>
+                  <div class="flex flex-col">
+                    <span class="text-xs sm:text-sm font-bold text-on-surface">Muntazam Boshqaruv Moliyachisi</span>
+                    <span class="text-xs text-on-surface-variant">Haftalik Cash Flow & Foyda-Zarar (P&L) hisoboti</span>
+                  </div>
+                </label>
+
+                <label class="flex items-center gap-3 p-3.5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+                  <input type="checkbox" id="chkExport" onchange="updateCalculator()" class="w-5 h-5 rounded text-secondary focus:ring-0 cursor-pointer"/>
+                  <div class="flex flex-col">
+                    <span class="text-xs sm:text-sm font-bold text-on-surface">Tashqi Iqtisodiy Faoliyat (Import / Eksport / GTD)</span>
+                    <span class="text-xs text-on-surface-variant">Bojxona hisobi va valyuta shartnomalari</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Calculated Breakdown Card (5 cols) -->
+          <div class="lg:col-span-5 bg-surface-container-low p-6 sm:p-7 rounded-3xl flex flex-col justify-between border border-surface-container-high">
+            <div>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-secondary block mb-1">HISOBLANGAN TAQSIMOT</span>
+              <h3 class="text-lg sm:text-xl font-bold text-primary mb-4">Tavsiya etiladigan xizmat paketi</h3>
+
+              <!-- Price Tag -->
+              <div class="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-high mb-4 shadow-sm">
+                <span class="text-xs text-on-surface-variant font-medium block">Oylik hisoblangan to'lov:</span>
+                <div class="flex items-baseline gap-1 mt-1">
+                  <span class="tnum text-3xl sm:text-4xl font-extrabold text-primary" id="calculatedPrice" aria-live="polite">1 825 000</span>
+                  <span class="text-sm font-bold text-on-surface-variant">so'm / oy</span>
+                </div>
+                <span class="text-[11px] text-secondary font-bold mt-1 block">✓ 100% Jarimalardan moddiy kafolat bilan</span>
+              </div>
+
+              <!-- Breakdown list -->
+              <div class="space-y-2 mb-4 text-xs sm:text-sm text-on-surface-variant">
+                <div class="flex justify-between py-1 border-b border-surface-container">
+                  <span>Korxona turi:</span>
+                  <strong class="text-on-surface" id="summaryBizType">MCHJ (Aylanma)</strong>
+                </div>
+                <div class="flex justify-between py-1 border-b border-surface-container">
+                  <span>Baza va 1C 8.3:</span>
+                  <strong class="text-on-surface" id="summaryBasePrice">1 200 000 so'm</strong>
+                </div>
+                <div class="flex justify-between py-1 border-b border-surface-container">
+                  <span>Xodimlar xizmati:</span>
+                  <strong class="text-on-surface" id="summaryStaffCost">225 000 so'm</strong>
+                </div>
+                <div class="flex justify-between py-1 border-b border-surface-container">
+                  <span>EHF / Hujjatlar:</span>
+                  <strong class="text-on-surface" id="summaryOpsCost">400 000 so'm</strong>
+                </div>
+                <div class="flex justify-between py-1" id="summaryExtrasRow">
+                  <span>Qo'shimcha modullar:</span>
+                  <strong class="text-secondary" id="summaryExtrasCost">Tanlanmagan</strong>
+                </div>
+              </div>
+
+              <p id="calcNote" class="text-xs text-on-surface-variant leading-relaxed">
+                * Yakuniy rasmiy shartnoma qiymati korxona faoliyatining o'ziga xosligi va hujjatlar murakkabligiga ko'ra kelishiladi.
+              </p>
+            </div>
+
+            <div class="space-y-2.5 mt-6">
+              <button onclick="applyCalculationToLeadForm()" class="w-full py-3.5 px-4 bg-primary text-on-primary rounded-xl font-bold text-xs sm:text-sm hover:bg-primary/90 transition-all flex items-center justify-center gap-2 shadow-md">
+                <span>Ushbu hisob bilan ariza yuborish</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+
+              <button onclick="copyCalculationEstimate()" class="w-full py-2.5 px-4 bg-surface-container-lowest text-primary rounded-xl font-semibold text-xs hover:bg-surface-container transition-all flex items-center justify-center gap-1.5 border border-surface-container-high">
+                <span class="material-symbols-outlined text-[16px]">content_copy</span>
+                <span id="copyBtnText">Smetani nusxalash</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. SAVOL-JAVOBLAR (F.A.Q ACCORDION & SEARCH) -->
+    <section class="w-full bg-surface-container-low py-16 sm:py-20" id="savollar">
+      <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col items-center text-center mb-10">
+          <div class="inline-flex items-center gap-2 mb-2">
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+            <span class="text-xs sm:text-sm uppercase tracking-widest text-secondary font-bold">KO'P BERILADIGAN SAVOLLAR</span>
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-primary">
+            Sizni qiziqtirgan barcha savollarga javoblar
+          </h2>
+          <p class="text-sm sm:text-base text-on-surface-variant max-w-md mt-1">
+            Savolingizni qidiruv orqali tez toping yoki ro'yxatdan tanlang.
+          </p>
+
+          <!-- Search Input -->
+          <div class="w-full max-w-md mt-6 relative">
+            <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+            <input type="text" id="faqSearchInput" oninput="filterFaqQuestions()" placeholder="Savolni qidiring (masalan: 1C, shartnoma, jarima)..." class="w-full h-12 pl-11 pr-4 rounded-2xl bg-surface-container-lowest text-on-surface text-sm border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-xs"/>
+          </div>
+        </div>
+
+        <!-- Accordion Items -->
+        <div class="space-y-3.5" id="faqContainer">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden shadow-xs">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-primary hover:text-primary-container transition-colors">
+              <span>Agar soliq organidan xatolik sababli jarima kelsa, kim to'laydi?</span>
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-1 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-surface-container-low">
+              Biz bilan tuziladigan rasmiy shartnomada <strong>100% moddiy javobgarlik</strong> bandi mavjud. Agar jarima bizning mutaxassislarimiz yo'l qo'ygan xatolik sababli kelib chiqsa, ushbu jarimani korxonamiz o'z hisobidan to'liq qoplab beradi.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden shadow-xs">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-primary hover:text-primary-container transition-colors">
+              <span>1C bazamiz sizda qoladimi yoki o'zimizning serverimizdami?</span>
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-1 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-surface-container-low">
+              1C bazasi sizning xohishingizga ko'ra o'zingizning serveringizda, bulutli xizmatda yoki bizning himoyalangan serverimizda yuritilishi mumkin. Har qanday holatda ham baza sizning to'liq mulkingiz hisoblanadi va istalgan paytda zaxira nusxasi (backup) taqdim etiladi.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden shadow-xs">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-primary hover:text-primary-container transition-colors">
+              <span>Shtatdagi buxgalterdan ko'ra siz bilan ishlashning qanday afzalligi bor?</span>
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-1 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-surface-container-low">
+              1) Xarajatlarni 50-70% gacha tejaysiz (ofis, kompyuter, 1C litsenziyasi va oylik ijtimoiy solig'ini to'lamaysiz); 2) Buxgalter kasal bo'lib qolishi yoki ishdan ketib qolishi xavfi yo'q — sizga butun jamoa xizmat qiladi; 3) 100% qonuniy moddiy javobgarlik mavjud.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden shadow-xs">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-primary hover:text-primary-container transition-colors">
+              <span>Hujjatlar va tijoriy ma'lumotlarimiz maxfiyligi qanday kafolatlanadi?</span>
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-1 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-surface-container-low">
+              Ish boshlashdan oldin ikki tomonlama <strong>NDA (Maxfiylik to'g'risida kelishuv)</strong> imzolanadi. Korxonangiz aylanmasi, bank ko'chirmalari va mijozlari ro'yxati uchinchi shaxslarga oshkor qilinmasligi yuridik kafolatlanadi.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden shadow-xs">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-primary hover:text-primary-container transition-colors">
+              <span>Yangi ochilgan kichik YaTT yoki MCHJ uchun ham xizmat ko'rsatasizmi?</span>
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-1 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-surface-container-low">
+              Albatta! Yangi boshlangan loyihalar uchun yengil boshlang'ich tariflarimiz mavjud. Biz sizga boshidan to'g'ri soliq rejimini tanlash, E-imzo olish va ortiqcha xarajatlarsiz hisobni yo'lga qo'yishda yordam beramiz.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden shadow-xs">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-primary hover:text-primary-container transition-colors">
+              <span>Hamkorlikni boshlash uchun qanday hujjatlar taqdim etilishi kerak?</span>
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-1 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-surface-container-low">
+              Guvohnoma nusxasi, rahbar pasport nusxasi, E-imzo kaliti (fakturalar va soliq kabineti uchun) va oxirgi bank ko'chirmalari yetarli. Qolgan barcha sozlashlarni o'zimiz bajaramiz.
+            </div>
+          </div>
+
+        </div>
+        <p id="faqEmpty" class="hidden text-center text-sm text-on-surface-variant mt-6">Hech narsa topilmadi. Boshqa so'z bilan qidirib ko'ring yoki <a href="#aloqa-forma" class="text-primary font-bold underline">savolingizni yuboring</a>.</p>
+
+      </div>
+    </section>
+
+    <!-- 7. ALOQA, REKVIZITLAR & ARIZA QOLDIRISH SECTION -->
+    <section class="w-full py-16 sm:py-20" id="aloqa-forma">
+      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col items-center text-center mb-12">
+          <div class="inline-flex items-center gap-2 mb-2">
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+            <span class="text-xs sm:text-sm uppercase tracking-widest text-secondary font-bold">RASMIY BOG'LANISH</span>
+            <span class="h-0.5 w-6 bg-secondary rounded-full"></span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-primary">
+            Biz bilan to'g'ridan-to'g'ri bog'laning
+          </h2>
+          <p class="text-sm sm:text-base text-on-surface-variant max-w-md mt-1">
+            Buxgalteriya va moliya masalalarida bepul birlamchi konsultatsiya oling.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Requisites & Office Info (Left 6 Cols) -->
+          <div class="lg:col-span-6 bg-surface-container-lowest p-6 sm:p-8 rounded-3xl shadow-md border border-surface-container-high flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary">
+                  <span class="material-symbols-outlined text-[26px]">contact_phone</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-primary">Halol Hisobchi Rekvizitlari</h3>
+                  <p class="text-xs text-on-surface-variant font-medium">Rasmiy ofis va to'g'ridan-to'g'ri aloqa</p>
+                </div>
+              </div>
+
+              <!-- Requisite list -->
+              <div class="space-y-4 mb-8">
+                <!-- Phone -->
+                <a href="tel:+998959535545" class="flex items-center gap-4 p-3.5 rounded-2xl hover:bg-surface-container-low transition-colors group">
+                  <div class="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-[22px]">call</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-on-surface-variant block font-medium">Ishonch telefoni:</span>
+                    <span class="text-base sm:text-lg font-bold text-primary">+998 95 953 55 45</span>
+                  </div>
+                </a>
+
+                <!-- Telegram -->
+                <a href="https://t.me/Kamronbek8626" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-3.5 rounded-2xl hover:bg-surface-container-low transition-colors group">
+                  <div class="w-11 h-11 rounded-xl bg-[#229ED9] text-white flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-[22px]">send</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-on-surface-variant block font-medium">Telegram:</span>
+                    <span class="text-sm sm:text-base font-bold text-on-surface">@Kamronbek8626</span>
+                  </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/halol_hisobchi" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-3.5 rounded-2xl hover:bg-surface-container-low transition-colors group">
+                  <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 text-white flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-[22px]">photo_camera</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-on-surface-variant block font-medium">Instagram sahifamiz:</span>
+                    <span class="text-sm sm:text-base font-bold text-on-surface">@halol_hisobchi</span>
+                  </div>
+                </a>
+
+                <!-- Address -->
+                <div class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-surface-container-low transition-colors">
+                  <div class="w-11 h-11 rounded-xl bg-secondary text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span class="material-symbols-outlined text-[22px]">location_on</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-on-surface-variant block font-medium">Ofis manzili:</span>
+                    <span class="text-xs sm:text-sm font-semibold text-on-surface leading-snug block">
+                      Toshkent sh., Shayxontohur tumani, Ko'kcha Darvoza ko'chasi, 314/308
+                    </span>
+                    <span class="text-xs text-secondary font-bold mt-1 inline-block">Mo'ljal: Ko'kcha masjidi yaqinida</span>
+                  </div>
+                </div>
+
+                <!-- Working Hours -->
+                <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-surface-container-low">
+                  <div class="w-11 h-11 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">schedule</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-on-surface-variant block font-medium">Ish tartibi:</span>
+                    <span class="text-xs sm:text-sm font-bold text-on-surface">Dushanba — Shanba: 09:00 dan 18:00 gacha</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Banner QR Code Box Replica -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4 border border-surface-container-high">
+              <div class="flex items-center gap-4">
+                <!-- Haqiqiy QR-kod (bot havolasi) -->
+                <div id="botQr" role="img" aria-label="Telegram bot QR-kodi" class="w-[88px] h-[88px] bg-white p-2 rounded-2xl shadow-sm flex items-center justify-center flex-shrink-0 border border-surface-container-high">
+                  <span class="material-symbols-outlined text-[#229ED9] text-[36px]" aria-hidden="true">send</span>
+                </div>
+                <div>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary text-white text-[11px] font-extrabold uppercase tracking-wider inline-block mb-1">
+                    TELEGRAM AQLLI BOT
+                  </span>
+                  <p class="text-xs sm:text-sm font-extrabold text-primary leading-tight">SOLIQ XAVFINI TEKSHIRING</p>
+                  <p class="text-xs text-on-surface-variant">@halol_hisobchi_ariza_bot</p>
+                </div>
+              </div>
+
+              <a href="https://t.me/halol_hisobchi_ariza_bot?start=audit" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-2.5 bg-[#229ED9] text-white rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 hover:opacity-90 transition-opacity">
+                <span>Botda ochish</span>
+                <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Quick Request Form (Right 6 Cols) -->
+          <div class="lg:col-span-6 bg-surface-container-lowest p-6 sm:p-8 rounded-3xl shadow-md border border-surface-container-high flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-[26px]">edit_document</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-primary">Ariza qoldirish</h3>
+                  <p class="text-xs text-on-surface-variant font-medium">Mutaxassisimiz 15 daqiqa ichida bog'lanadi</p>
+                </div>
+              </div>
+
+              <form class="space-y-4" id="leadForm" onsubmit="handleFormSubmit(event)">
+                <!-- Spamga qarshi yashirin maydon (odamlar to'ldirmaydi) -->
+                <div class="hidden" aria-hidden="true"><input type="text" id="leadWebsite" name="website" tabindex="-1" autocomplete="off"/></div>
+                
+                <!-- Client Name / Company -->
+                <div>
+                  <label for="leadName" class="text-xs sm:text-sm font-bold text-on-surface block mb-1.5">Ismingiz yoki Korxona nomi: <span class="text-error">*</span></label>
+                  <input type="text" id="leadName" name="name" required minlength="2" maxlength="80" autocomplete="name" placeholder="Masalan: Sardor / 'Orient Savdo' MCHJ" class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-sm border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary/20"/>
+                </div>
+
+                <!-- Phone with Auto-mask -->
+                <div>
+                  <label for="leadPhone" class="text-xs sm:text-sm font-bold text-on-surface block mb-1.5">Telefon raqamingiz: <span class="text-error">*</span></label>
+                  <input type="tel" id="leadPhone" name="phone" required inputmode="tel" autocomplete="tel" maxlength="19" placeholder="+998 (90) 123-45-67" oninput="formatPhoneNumber(this)" class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-sm font-medium border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary/20"/>
+                  <span class="text-[11px] text-on-surface-variant mt-1 block">O'zbekiston raqami formatida kiriting</span>
+                </div>
+
+                <!-- Desired Service -->
+                <div>
+                  <label for="serviceSelect" class="text-xs sm:text-sm font-bold text-on-surface block mb-1.5">Kerakli xizmat turi:</label>
+                  <select id="serviceSelect" class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-sm border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary/20">
+                    <option value="Buxgalteriya xizmati">Buxgalteriya xizmati (1C & To'liq yuritish)</option>
+                    <option value="Moliyachi xizmati">Moliyachi xizmati (Cash Flow & P&L boshqaruvi)</option>
+                    <option value="Audit xizmati">Audit xizmati (Xatarlarni 100% tekshirish)</option>
+                    <option value="Soliq maslahatlari">Soliq maslahatlari & Optimizatsiya</option>
+                    <option value="Tashqi Iqtisodiy Faoliyat (Import/Eksport)">Tashqi Iqtisodiy Faoliyat (Import/Eksport)</option>
+                    <option value="E-tijorat & Uzum Market hisobi">E-tijorat & Uzum Market hisobi</option>
+                    <option value="Kompleks xizmat">Barcha xizmatlar kompleksi</option>
+                  </select>
+                </div>
+
+                <!-- Optional Note -->
+                <div>
+                  <label for="leadComment" class="text-xs sm:text-sm font-bold text-on-surface block mb-1.5">Qo'shimcha izoh yoki savolingiz (ixtiyoriy):</label>
+                  <textarea id="leadComment" rows="3" maxlength="800" placeholder="Faoliyat sohangiz, xodimlar soni yoki alohida vazifalaringiz..." class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface text-sm border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary/20"></textarea>
+                </div>
+
+                <p id="formError" role="alert" class="hidden text-sm font-semibold text-error bg-error-container rounded-xl px-4 py-3"></p>
+
+                <!-- Form Submit Action -->
+                <div class="space-y-2 pt-2">
+                  <button type="submit" id="leadSubmitBtn" class="w-full py-4 px-6 rounded-xl bg-secondary text-white font-bold text-sm sm:text-base shadow-[0_4px_14px_rgba(0,109,56,0.25)] hover:bg-secondary/90 active:scale-95 transition-all flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[20px]" id="leadSubmitIcon">send</span>
+                    <span id="leadSubmitText">Yuborish va Bepul Maslahat Olish</span>
+                  </button>
+
+                  <button type="button" onclick="sendViaTelegramDirect()" class="w-full py-3 px-6 rounded-xl bg-[#229ED9]/10 text-[#0088cc] hover:bg-[#229ED9]/20 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">send</span>
+                    <span>To'g'ridan-to'g'ri Telegram orqali yuborish</span>
+                  </button>
+                </div>
+
+              </form>
+
+              <div class="mt-4 flex items-center justify-center gap-2 text-on-surface-variant text-xs">
+                <span class="material-symbols-outlined text-[16px]">lock</span>
+                <span>Ma'lumotlaringiz maxfiyligi NDA asosida 100% kafolatlanadi</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. BOTTOM TRUST & SIGNATURE BANNER (Banner replica) -->
+    <section class="w-full bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary py-16 relative overflow-hidden">
+      <!-- Glow -->
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(119,252,163,0.18)_0,transparent_75%)] pointer-events-none"></div>
+
+      <div class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center">
+        
+        <!-- Handshake Icon with Speed Lines -->
+        <div class="relative mb-6 flex items-center justify-center">
+          <div class="flex items-center gap-1 mr-4">
+            <span class="w-8 h-1 bg-secondary-fixed-dim rounded-full"></span>
+            <span class="w-3 h-1 bg-secondary-fixed-dim rounded-full"></span>
+          </div>
+          <div class="w-20 h-20 rounded-full bg-surface-container-lowest/15 backdrop-blur-md flex items-center justify-center border-2 border-secondary-fixed/50 shadow-[0_0_35px_rgba(119,252,163,0.35)]">
+            <span class="material-symbols-outlined text-secondary-fixed text-[44px]">handshake</span>
+          </div>
+          <div class="flex items-center gap-1 ml-4">
+            <span class="w-3 h-1 bg-secondary-fixed-dim rounded-full"></span>
+            <span class="w-8 h-1 bg-secondary-fixed-dim rounded-full"></span>
+          </div>
+        </div>
+
+        <!-- Banner Slogan -->
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-on-primary tracking-tight mb-2">
+          Halollikni
+        </h2>
+        <div class="inline-block px-5 py-2 rounded-full bg-secondary-container/20 text-secondary-fixed text-xl sm:text-2xl font-black tracking-wide border border-secondary-fixed/30 shadow-sm">
+          qadrlaydiganlar uchun!
+        </div>
+
+        <p class="text-sm sm:text-base text-white/90 max-w-xl mt-4 leading-relaxed">
+          Halol Hisobchi bilan birga biznesingiz moliyaviy poydevorini mustahkamlang va qonuniy xotirjamlikka erishing.
+        </p>
+
+        <!-- Quick Badges -->
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-white/90 text-xs sm:text-sm font-semibold">
+          <span class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary-fixed text-[20px]">verified</span>
+            Shaffof hisob-kitob
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary-fixed text-[20px]">security</span>
+            100% Qonuniy kafolat
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary-fixed text-[20px]">workspace_premium</span>
+            Professional tajriba
+          </span>
+        </div>
+
+        <div class="mt-10">
+          <a href="#aloqa-forma" class="px-8 py-3.5 bg-secondary-fixed text-on-secondary-fixed font-black text-sm rounded-full shadow-lg hover:bg-secondary-fixed-dim transition-all active:scale-95 inline-flex items-center gap-2">
+            <span>Hamkorlikni boshlash</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="w-full bg-surface-container-high/40 border-t border-surface-container-high py-10 pb-28 lg:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs sm:text-sm text-on-surface-variant">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-primary text-white flex items-center justify-center font-bold">
+          <span class="material-symbols-outlined text-[18px]">account_balance</span>
+        </div>
+        <div>
+          <span class="font-bold text-primary text-sm">Halol Hisobchi</span>
+          <p class="text-xs text-on-surface-variant">© 2026 Barcha huquqlar qonun bilan himoyalangan.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold">
+        <a href="#asosiy" class="hover:text-primary transition-colors">Asosiy</a>
+        <a href="#xizmatlar" class="hover:text-primary transition-colors">Xizmatlar</a>
+        <a href="#hisoblash-kalkulyatori" class="hover:text-primary transition-colors">Kalkulyator</a>
+        <a href="#savollar" class="hover:text-primary transition-colors">F.A.Q</a>
+        <a href="javascript:void(0)" onclick="openGuaranteeModal()" class="hover:text-primary transition-colors">Moddiy Kafolat</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://t.me/Kamronbek8626" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-surface-container-lowest border border-surface-container-high flex items-center justify-center text-[#229ED9] hover:bg-[#229ED9] hover:text-white transition-colors" title="Telegram" aria-label="Telegram">
+          <span class="material-symbols-outlined text-[18px]">send</span>
+        </a>
+        <a href="https://instagram.com/halol_hisobchi" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-surface-container-lowest border border-surface-container-high flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors" title="Instagram" aria-label="Instagram">
+          <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+        </a>
+        <a href="tel:+998959535545" class="w-9 h-9 rounded-full bg-surface-container-lowest border border-surface-container-high flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-colors" title="Qo'ng'iroq" aria-label="Qo'ng'iroq">
+          <span class="material-symbols-outlined text-[18px]">call</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION BAR ================= -->
+  <nav class="fixed bottom-0 inset-x-0 z-40 pb-safe bg-surface/95 backdrop-blur-xl border-t border-surface-container-high/80 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] lg:hidden">
+    <div class="flex justify-around items-center h-16 px-2">
+      
+      <a href="#asosiy" class="mobile-nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[48px] min-h-[48px] text-primary font-bold transition-colors">
+        <span class="material-symbols-outlined text-[22px]">dashboard</span>
+        <span class="text-[11px]">Asosiy</span>
+      </a>
+
+      <a href="#xizmatlar" class="mobile-nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[48px] min-h-[48px] text-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[22px]">account_balance</span>
+        <span class="text-[11px]">Xizmatlar</span>
+      </a>
+
+      <a href="#hisoblash-kalkulyatori" class="mobile-nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[48px] min-h-[48px] text-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[22px]">calculate</span>
+        <span class="text-[11px]">Kalkulyator</span>
+      </a>
+
+      <a href="#savollar" class="mobile-nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[48px] min-h-[48px] text-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[22px]">help_center</span>
+        <span class="text-[11px]">Savollar</span>
+      </a>
+
+      <a href="#aloqa-forma" class="mobile-nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[48px] min-h-[48px] text-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[22px]">support_agent</span>
+        <span class="text-[11px]">Aloqa</span>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= INTERACTIVE MODALS ================= -->
+
+  <!-- 1. SERVICE DETAIL MODAL -->
+  <div id="serviceDetailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm modal-backdrop">
+    <div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-2xl border border-surface-container-high max-h-[90vh] overflow-y-auto modal-panel">
+      
+      <!-- Close button -->
+      <button onclick="closeModal('serviceDetailModal')" aria-label="Yopish" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="flex items-center gap-3.5 mb-6 pr-8">
+        <div id="modalIconContainer" class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-[30px]" id="modalIcon">receipt_long</span>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-secondary uppercase tracking-wider block" id="modalTag">PROFESSIONAL XIZMAT</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-primary leading-tight" id="modalTitle">Xizmat nomi</h3>
+        </div>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="space-y-5 text-on-surface">
+        
+        <!-- Description -->
+        <p class="text-sm text-on-surface-variant leading-relaxed" id="modalDesc">
+          Xizmat haqida to'liq tavsif...
+        </p>
+
+        <!-- What is included -->
+        <div class="p-4 rounded-2xl bg-surface-container-low">
+          <h4 class="text-xs sm:text-sm font-bold text-primary mb-3 flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">checklist</span>
+            <span>Xizmat tarkibiga nimalar kiradi?</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-on-surface-variant" id="modalInclusions">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+
+        <!-- Required Documents -->
+        <div class="p-4 rounded-2xl bg-surface-container-low">
+          <h4 class="text-xs sm:text-sm font-bold text-primary mb-3 flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">folder</span>
+            <span>Talab etiladigan hujjatlar:</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-on-surface-variant" id="modalDocuments">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+
+        <!-- Process steps -->
+        <div class="p-4 rounded-2xl bg-secondary/10 border border-secondary/20">
+          <h4 class="text-xs sm:text-sm font-bold text-secondary mb-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">verified_user</span>
+            <span>Kafolat va Natija:</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-secondary font-medium leading-relaxed" id="modalGuarantee">
+            100% moddiy javobgarlik shartnomada mustahkamlanadi.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Modal Actions -->
+      <div class="flex flex-col sm:flex-row items-center gap-3 mt-8 pt-4 border-t border-surface-container-low">
+        <button id="modalOrderBtn" class="w-full sm:flex-1 py-3.5 px-6 rounded-xl bg-secondary text-white font-bold text-sm shadow-md hover:bg-secondary/90 transition-all flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">check</span>
+          <span>Ushbu xizmatga buyurtma berish</span>
+        </button>
+        <button onclick="closeModal('serviceDetailModal')" class="w-full sm:w-auto py-3.5 px-6 rounded-xl bg-surface-container text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-colors">
+          Yopish
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. GUARANTEE & CONTRACT (NDA) MODAL -->
+  <div id="guaranteeModal" role="dialog" aria-modal="true" aria-labelledby="guaranteeTitle" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm modal-backdrop">
+    <div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-2xl border border-surface-container-high max-h-[90vh] overflow-y-auto modal-panel">
+      
+      <button onclick="closeModal('guaranteeModal')" aria-label="Yopish" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="flex items-center gap-3.5 mb-6 pr-8">
+        <div class="w-14 h-14 rounded-2xl bg-secondary/15 flex items-center justify-center text-secondary flex-shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-[30px]">verified_user</span>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-secondary uppercase tracking-wider block">YURIDIK VA MODDIY HIMOYA</span>
+          <h3 id="guaranteeTitle" class="text-xl sm:text-2xl font-extrabold text-primary leading-tight">Halollik va Kafolat Mezonlari</h3>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+        
+        <div class="p-4 rounded-2xl bg-surface-container-low">
+          <h4 class="font-bold text-primary mb-1.5 flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">gavel</span>
+            1. Shartnomaviy Moddiy Javobgarlik (Kafolat)
+          </h4>
+          <p>
+            Har bir mijoz bilan rasmiy xizmat ko'rsatish shartnomasi tuziladi. Shartnomaning tegishli bandiga asosan, buxgalteriya hisobidagi kamchilik yoki xatolik oqibatida vujudga kelgan soliq jarimalari va penyalar korxonamiz tomonidan <strong>to'liq moddiy qoplanishi</strong> qat'iy belgilanadi.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-surface-container-low">
+          <h4 class="font-bold text-primary mb-1.5 flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">lock</span>
+            2. Qat'iy NDA (Konfidensiallik)
+          </h4>
+          <p>
+            Korxonangiz aylanmasi, daromadlari, mahsulot tannarxi, shartnoma shartlari va bank hisobvaraqlaridagi barcha ma'lumotlar tijorat siri hisoblanadi. Hech qanday ma'lumot uchinchi shaxslarga berilmaydi.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-surface-container-low">
+          <h4 class="font-bold text-primary mb-1.5 flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">balance</span>
+            3. Halol va Shaffof Hisob-kitob
+          </h4>
+          <p>
+            Barcha xizmat haqimiz shaffof va ochiq hisoblanadi. Hech qanday yashirin komissiyalar, tushunarsiz to'lovlar mavjud emas. Shubhali yoki noqonuniy sxemalardan mutlaqo xoli hisob yuritiladi.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-surface-container-low flex justify-end">
+        <button onclick="closeModal('guaranteeModal')" class="py-3 px-6 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition-colors">
+          Tushunarli, yopish
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. ARIZA NATIJASI MODALI (muvaffaqiyat / xato) -->
+  <div id="leadSuccessModal" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm modal-backdrop">
+    <div class="relative w-full max-w-md bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-2xl border border-surface-container-high text-center modal-panel">
+
+      <div id="leadModalIconBox" class="w-16 h-16 rounded-full bg-secondary/15 text-secondary flex items-center justify-center mx-auto mb-4 shadow-inner">
+        <span id="leadModalIcon" class="material-symbols-outlined text-[36px]" aria-hidden="true">check_circle</span>
+      </div>
+
+      <h3 id="leadModalTitle" class="text-xl sm:text-2xl font-extrabold text-primary mb-2">Arizangiz qabul qilindi!</h3>
+      <p id="leadModalText" class="text-xs sm:text-sm text-on-surface-variant mb-6 leading-relaxed"></p>
+
+      <div class="space-y-2.5">
+        <a id="telegramDirectAfterLead" href="https://t.me/halol_hisobchi" target="_blank" rel="noopener noreferrer" class="hidden w-full py-3.5 px-5 rounded-xl bg-[#229ED9] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 hover:opacity-95 transition-opacity shadow-md">
+          <span class="material-symbols-outlined text-[18px]" aria-hidden="true">send</span>
+          <span>Telegram orqali yuborish</span>
+        </a>
+        <a id="callAfterLead" href="tel:+998959535545" class="hidden w-full py-3 px-5 rounded-xl bg-secondary text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]" aria-hidden="true">call</span>
+          <span>+998 95 953 55 45</span>
+        </a>
+        <button data-autofocus onclick="closeModal('leadSuccessModal')" class="w-full py-3 px-5 rounded-xl bg-surface-container text-on-surface font-semibold text-xs sm:text-sm hover:bg-surface-container-high transition-colors">
+          Yopish
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= CLIENT JAVASCRIPT ================= -->
+  <script>
+    // =========================================================================
+    // SOZLAMALAR
+    // Bot serveri manzili. Sayt internetda (HTTPS) bo'lsa, bu yerga botni
+    // joylashtirgan serveringiz manzilini yozing, masalan:
+    //   "https://bot.halolhisobchi.uz/api/lead"
+    // Mahalliy sinov uchun "http://localhost:3005/api/lead" qoldiriladi.
+    // MUHIM: bu yerga bot tokenini YOZMANG — token faqat serverdagi .env faylida turadi.
+    // =========================================================================
+    const CONFIG = {
+      API_URL: window.location.protocol.startsWith("http") ? "/api/lead" : "http://localhost:3005/api/lead",
+      TELEGRAM_USER: "Kamronbek8626",
+      BOT_USER: "halol_hisobchi_ariza_bot",
+      PHONE_TEL: "+998959535545",
+      PHONE_TEXT: "+998 95 953 55 45",
+    };
+
+    // Narxlar bot.js dagi PRICING bilan BIR XIL bo'lishi shart.
+    const PRICING = {
+      base: { 'MCHJ-aylanma': 1200000, 'MCHJ-qqs': 1800000, 'YaTT': 750000, 'IT-Park': 1400000 },
+      label: {
+        'MCHJ-aylanma': 'MCHJ (Aylanma)',
+        'MCHJ-qqs': 'MCHJ (Umumiy rejim QQS 12%)',
+        'YaTT': 'YaTT (Yakka Tartibdagi Tadbirkor)',
+        'IT-Park': 'IT Park rezidenti / XK'
+      },
+      perStaff: 45000,
+      perOp: 8000,
+      audit: 650000,
+      finance: 900000,
+      export: 700000
+    };
+
+    // --- Xizmatlar ma'lumotlar bazasi ---
+    const SERVICES_DATABASE = {
+      buxgalteriya: {
+        title: "Buxgalteriya xizmati (to'liq yuritish)",
+        tag: "ASOSIY BOSHQARUV",
+        icon: "receipt_long",
+        desc: "Korxonangizning barcha oylik, choraklik va yillik soliq hisobotlarini 100% o'z vaqtida topshirish, birlamchi hujjatlar, 1C 8.3 dasturi va elektron hisobvaraq-fakturalarni to'liq nazorat qilish.",
+        inclusions: [
+          "1C 8.3 dasturida korxona bazasini to'liq yuritish va doimiy yangilab borish",
+          "Elektron hisobvaraq-fakturalar (EHF, Didox, Faktura.uz)ni qabul qilish va yuborish",
+          "Oylik va choraklik soliq hisobotlarini (QQS, Foyda, JShODS, Aylanma) topshirish",
+          "Bank-klient tizimi orqali to'lov topshiriqnoma va ko'chirmalarni shakllantirish",
+          "Kadrlar hisobi (my.mehnat.uz bazasida ro'yxatga olish, ta'til va kasallik varaqalari)"
+        ],
+        documents: [
+          "Yuridik shaxs guvohnomasi (Guvohnoma nusxasi)",
+          "E-imzo kaliti (soliq va didox kabineti uchun)",
+          "Rahbar pasport nusxasi",
+          "Oxirgi bank ko'chirmasi va 1C bazasi (agar avval yuritilgan bo'lsa)"
+        ],
+        guarantee: "Har bir topshirilgan hisobot qonunchilikka 100% muvofiq bo'ladi. Xatolik uchun moddiy javobgarlik shartnomada kafolatlanadi."
+      },
+      moliya: {
+        title: "Moliyachi xizmati (Cash Flow & P&L)",
+        tag: "MOLIYAVIY BOSHQARUV",
+        icon: "trending_up",
+        desc: "Biznesingizning haqiqiy moliyaviy holatini aks ettiruvchi boshqaruv hisobotlari. Pul qayerdan kelyapti, qayerga ketyapti va qancha sof foyda qolayotganini aniq ko'rsatamiz.",
+        inclusions: [
+          "Cash Flow (Pul oqimlari harakati) hisoboti — kassa uzilishlarini oldini olish",
+          "P&L (Foyda va Zararlar) hisoboti — har bir yo'nalish bo'yicha sof rentabellik",
+          "Unit-iqtisodiyot tahlili: har bir tovar va xizmatning real foydasi",
+          "Kelgusi 3-12 oylik xarajatlar va tushumlar moliyaviy byudjeti",
+          "Haftalik boshqaruv xulosalari va biznes egasi uchun tavsiyalar"
+        ],
+        documents: [
+          "Hozirgi kassa va bank hisob raqamlari harakati",
+          "Doimiy va o'zgaruvchan xarajatlar ro'yxati (ijara, oyliklar, xomashyo)",
+          "Tovarlar / xizmatlar narxnomasi"
+        ],
+        guarantee: "Biznesingizda pul yo'qolishining oldi olinadi, samarasiz xarajatlar qisqartiriladi va foyda oshiriladi."
+      },
+      audit: {
+        title: "Audit xizmati (Xatarlarni 100% bartaraf etish)",
+        tag: "XAVFSIZLIK VA NAZORAT",
+        icon: "fact_check",
+        desc: "O'tgan 1 yildan 3 yilgacha bo'lgan barcha buxgalteriya operatsiyalarini qayta ko'rib chiqish, soliq xatarlarini aniqlash va tekshiruv kelishidan oldin to'liq tuzatish.",
+        inclusions: [
+          "Birlamchi hujjatlar, shartnomalar va aktlarning to'liqligini tekshirish",
+          "To'langan soliqlar va hisobotlardagi nomuvofiqliklarni aniqlash",
+          "Ombor va qoldiqlar tahlili, asossiz hisobdan chiqarishlarni tekshirish",
+          "Xatolar reyestri va ularni qonuniy tuzatish bo'yicha bosqichma-bosqich reja",
+          "Rasmiy ichki audit xulosasi taqdimoti"
+        ],
+        documents: [
+          "O'tgan davrlar uchun 1C bazasi",
+          "Soliq to'lovchining shaxsiy kabinetidagi hisobotlar tarixi",
+          "Shartnomalar va birlamchi hujjatlar arxivi"
+        ],
+        guarantee: "Soliq tekshiruvi kelganda korxonangiz 100% himoyalangan bo'lishiga erishiladi."
+      },
+      soliq: {
+        title: "Soliq maslahatlari va Optimizatsiya",
+        tag: "QONUNIY OPTIMIZATSIYA",
+        icon: "price_check",
+        desc: "Soliq qonunchiligidagi imtiyozlardan unumli foydalanish, ortiqcha to'lovlarning oldini olish hamda soliq organlaridan kelgan talabnomalarga asosli e'tirozlar tayyorlash.",
+        inclusions: [
+          "Korxona faoliyatiga eng qulay soliq rejimini tanlash va asoslash",
+          "Kameral soliq tekshiruvi xabarnomalariga yuridik asosli javoblar tayyorlash",
+          "Asossiz hisoblangan penya va soliqlarni bekor qilish bo'yicha hamrohlik",
+          "Qonuniy soliq imtiyozlarini to'liq qo'llash (eksport, IT, ishlab chiqarish)",
+          "Muntazam operativ konsalting qo'llab-quvvatlash"
+        ],
+        documents: [
+          "Soliq organidan kelgan talabnoma yoki xat nusxasi",
+          "Bahsli operatsiyalar bo'yicha hisobvaraq-fakturalar va to'lovlar"
+        ],
+        guarantee: "Barcha tavsiyalar O'zbekiston Respublikasi Soliq Kodeksiga to'liq muvofiq beriladi."
+      },
+      eksport: {
+        title: "Tashqi Iqtisodiy Faoliyat (Import / Eksport)",
+        tag: "XALQARO HISOB",
+        icon: "flight_takeoff",
+        desc: "Bojxona deklaratsiyalari (GTD), chet el valyutasidagi shartnomalar, xalqaro to'lovlar va valyuta kurs farqlarini to'g'ri hisobga olish.",
+        inclusions: [
+          "Bojxona yuk deklaratsiyalari (GTD) bo'yicha import xarajatlarini to'g'ri taqsimlash",
+          "Yagona elektron axborot tizimi (EISVO)da kontraktlarni ro'yxatga olish",
+          "Eksportda 0 stavkali QQS hisobi va uni budjetdan qaytarib olish arizalari",
+          "Valyuta hisobvaraqlarini yuritish va kurs farqlarini buxgalteriyada aks ettirish"
+        ],
+        documents: [
+          "Tashqi savdo shartnomalari (kontraktlar)",
+          "Bojxona deklaratsiyalari (GTD / IM-40 / EK-10)",
+          "Invoys va transport hujjatlari (CMR / Konosament)"
+        ],
+        guarantee: "Valyuta nazorati jarimalari va bojxona to'lovlaridagi xatarlarning oldi olinadi."
+      },
+      etijorat: {
+        title: "E-tijorat & Uzum Market hisobi",
+        tag: "MARKETPLACE",
+        icon: "shopping_cart",
+        desc: "Uzum Market, Yandex Market va boshqa elektron maydonlarda savdo qiluvchi sotuvchilar uchun komissiya va sotuvlar hisobi.",
+        inclusions: [
+          "Uzum Market oylik aktlari bo'yicha to'liq hisobot tuzish",
+          "Agregator komissiyalari va logistika to'lovlarini xarajatga chiqarish",
+          "Ombor qoldiqlari va qaytarilgan tovarlar hisobini yuritish",
+          "Onlayn fiskal cheklar va tushumlar bo'yicha soliq hisoboti"
+        ],
+        documents: [
+          "Uzum Market shaxsiy kabinet hisobotlari",
+          "Fiskal cheklar reyestri"
+        ],
+        guarantee: "Marketplace hisobingiz 1C bilan to'liq moslashtiriladi va soliq savollari qolmaydi."
+      }
+    };
+
+    // Modal "buyurtma" tugmasi uchun: xizmat kaliti -> formadagi option qiymati
+    const SERVICE_FORM_VALUE = {
+      buxgalteriya: "Buxgalteriya xizmati",
+      moliya: "Moliyachi xizmati",
+      audit: "Audit xizmati",
+      soliq: "Soliq maslahatlari",
+      eksport: "Tashqi Iqtisodiy Faoliyat (Import/Eksport)",
+      etijorat: "E-tijorat & Uzum Market hisobi"
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const fmt = (n) => new Intl.NumberFormat('uz-UZ').format(n).replace(/\u00A0/g, ' ');
+
+    // =========================================================================
+    // MODALLAR (fokus boshqaruvi, Escape, sahifa scroll'ini qotirish)
+    // =========================================================================
+    let lastFocused = null;
+
+    function openModal(id) {
+      const modal = $(id);
+      if (!modal) return;
+      lastFocused = document.activeElement;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      const focusTarget = modal.querySelector('[data-autofocus]') || modal.querySelector('button, a[href]');
+      if (focusTarget) setTimeout(() => focusTarget.focus(), 30);
+    }
+
+    function closeModal(id) {
+      const modal = $(id);
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      if (!document.querySelector('.modal-backdrop.flex')) document.body.style.overflow = '';
+      if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+    }
+
+    function openServiceModal(key) {
+      const data = SERVICES_DATABASE[key];
+      if (!data) return;
+
+      $('modalTitle').textContent = data.title;
+      $('modalTag').textContent = data.tag;
+      $('modalIcon').textContent = data.icon;
+      $('modalDesc').textContent = data.desc;
+      $('modalGuarantee').textContent = data.guarantee;
+
+      const fill = (listId, items, iconName, iconClass) => {
+        const list = $(listId);
+        list.innerHTML = '';
+        items.forEach((text) => {
+          const li = document.createElement('li');
+          li.className = 'flex items-start gap-2';
+          const icon = document.createElement('span');
+          icon.className = `material-symbols-outlined ${iconClass} text-[16px] mt-0.5 flex-shrink-0`;
+          icon.setAttribute('aria-hidden', 'true');
+          icon.textContent = iconName;
+          const label = document.createElement('span');
+          label.textContent = text;
+          li.append(icon, label);
+          list.appendChild(li);
+        });
+      };
+      fill('modalInclusions', data.inclusions, 'check_circle', 'text-secondary');
+      fill('modalDocuments', data.documents, 'arrow_right', 'text-primary');
+
+      $('modalOrderBtn').onclick = () => {
+        closeModal('serviceDetailModal');
+        selectServiceDirect(SERVICE_FORM_VALUE[key]);
+      };
+      openModal('serviceDetailModal');
+    }
+
+    function openGuaranteeModal() { openModal('guaranteeModal'); }
+
+    window.addEventListener('keydown', (e) => {
+      const open = document.querySelector('.modal-backdrop.flex');
+      if (!open) return;
+      if (e.key === 'Escape') { closeModal(open.id); return; }
+      if (e.key === 'Tab') { // fokusni modal ichida ushlab turish
+        const f = open.querySelectorAll('button:not([disabled]), a[href], input, select, textarea');
+        if (!f.length) return;
+        const first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
+
+    document.querySelectorAll('.modal-backdrop').forEach((backdrop) => {
+      backdrop.addEventListener('click', (e) => { if (e.target === backdrop) closeModal(backdrop.id); });
+    });
+
+    // =========================================================================
+    // XIZMATLAR FILTRI (bitta kartochka bir nechta toifaga tegishli bo'lishi mumkin)
+    // =========================================================================
+    function filterServices(category) {
+      document.querySelectorAll('.service-tab').forEach((btn) => {
+        const active = btn.id === 'tab-' + category;
+        btn.classList.toggle('bg-primary', active);
+        btn.classList.toggle('text-on-primary', active);
+        btn.classList.toggle('font-bold', active);
+        btn.classList.toggle('text-on-surface', !active);
+        btn.classList.toggle('font-medium', !active);
+        btn.setAttribute('aria-pressed', String(active));
+      });
+      document.querySelectorAll('.service-card').forEach((card) => {
+        const cats = (card.getAttribute('data-category') || '').split(/\s+/);
+        card.classList.toggle('hidden', !(category === 'all' || cats.includes(category)));
+      });
+    }
+
+    function selectServiceDirect(serviceValue) {
+      const select = $('serviceSelect');
+      if (select && serviceValue) {
+        const idx = Array.from(select.options).findIndex((o) => o.value === serviceValue);
+        if (idx >= 0) select.selectedIndex = idx;
+      }
+      const target = $('aloqa-forma');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => { const n = $('leadName'); if (n) n.focus({ preventScroll: true }); }, 600);
+    }
+
+    // =========================================================================
+    // KALKULYATOR
+    // =========================================================================
+    let selectedCompanyType = 'MCHJ-aylanma';
+
+    function setCompanyType(type, element) {
+      selectedCompanyType = type;
+      document.querySelectorAll('#companyTypeContainer button').forEach((btn) => {
+        const active = btn === element;
+        btn.classList.toggle('bg-primary', active);
+        btn.classList.toggle('text-white', active);
+        btn.classList.toggle('font-bold', active);
+        btn.classList.toggle('bg-surface-container', !active);
+        btn.classList.toggle('text-on-surface', !active);
+        btn.classList.toggle('font-semibold', !active);
+        btn.setAttribute('aria-pressed', String(active));
+      });
+      updateCalculator();
+    }
+
+    function calcState() {
+      const staff = parseInt($('staffRange').value, 10);
+      const ops = parseInt($('opsRange').value, 10);
+      const base = PRICING.base[selectedCompanyType];
+      const staffCost = staff * PRICING.perStaff;
+      const opsCost = ops * PRICING.perOp;
+      const extras = ($('chkAudit').checked ? PRICING.audit : 0)
+                   + ($('chkFinance').checked ? PRICING.finance : 0)
+                   + ($('chkExport').checked ? PRICING.export : 0);
+      return {
+        staff, ops, base, staffCost, opsCost, extras,
+        total: base + staffCost + opsCost + extras,
+        staffLabel: staff >= 60 ? '60+ kishi' : staff + ' kishi',
+        opsLabel: ops >= 600 ? '600+ ta' : ops + ' ta',
+        bizLabel: PRICING.label[selectedCompanyType]
+      };
+    }
+
+    function updateCalculator() {
+      const c = calcState();
+      $('staffCountLabel').textContent = c.staffLabel;
+      $('operationsLabel').textContent = c.opsLabel;
+      $('calculatedPrice').textContent = fmt(c.total);
+      $('summaryBizType').textContent = c.bizLabel;
+      $('summaryBasePrice').textContent = fmt(c.base) + " so'm";
+      $('summaryStaffCost').textContent = fmt(c.staffCost) + " so'm";
+      $('summaryOpsCost').textContent = fmt(c.opsCost) + " so'm";
+      $('summaryExtrasCost').textContent = c.extras > 0 ? fmt(c.extras) + " so'm" : 'Tanlanmagan';
+
+      const atMax = c.staff >= 60 || c.ops >= 600;
+      $('calcNote').textContent = atMax
+        ? "* Katta hajm uchun narx individual hisoblanadi — aniq qiymatni mutaxassisimiz aytadi."
+        : "* Yakuniy rasmiy shartnoma qiymati korxona faoliyatining o'ziga xosligi va hujjatlar murakkabligiga ko'ra kelishiladi.";
+    }
+
+    function calcSummaryText() {
+      const c = calcState();
+      return `Kalkulyator hisobi: ${c.bizLabel}; xodimlar: ${c.staffLabel}; EHF: ${c.opsLabel}; taxminiy to'lov: ${fmt(c.total)} so'm/oy.`;
+    }
+
+    function applyCalculationToLeadForm() {
+      const field = $('leadComment');
+      if (field) {
+        const marker = 'Kalkulyator hisobi:';
+        const own = field.value.split('\n').filter((l) => !l.startsWith(marker)).join('\n').trim();
+        field.value = (own ? own + '\n' : '') + calcSummaryText();
+      }
+      selectServiceDirect(null);
+    }
+
+    function copyCalculationEstimate() {
+      const c = calcState();
+      const text = `Halol Hisobchi hisob-kitobi:\n• Korxona: ${c.bizLabel}\n• Xodimlar: ${c.staffLabel}\n• Oylik EHF/hujjatlar: ${c.opsLabel}\n• Taxminiy qiymat: ${fmt(c.total)} so'm / oy\nTel: ${CONFIG.PHONE_TEXT}`;
+      const done = () => {
+        const label = $('copyBtnText');
+        label.textContent = 'Nusxalandi! ✓';
+        setTimeout(() => { label.textContent = 'Smetani nusxalash'; }, 3000);
+      };
+      const fallback = () => {
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch (_) { /* nusxalab bo'lmadi */ }
+        ta.remove();
+      };
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+      else fallback();
+    }
+
+    // =========================================================================
+    // TELEFON MASKASI: +998 (90) 123-45-67  (backspace bilan to'liq o'chirish mumkin)
+    // =========================================================================
+    function phoneDigits(value) {
+      let d = value.replace(/\D/g, '');
+      if (value.trim().startsWith('+998') || (d.length === 12 && d.startsWith('998'))) d = d.slice(3);
+      return d.slice(0, 9);
+    }
+
+    function formatPhoneNumber(input) {
+      const d = phoneDigits(input.value);
+      let out = '';
+      if (d.length) out = '+998 (' + d.slice(0, 2);
+      if (d.length > 2) out += ') ' + d.slice(2, 5);
+      if (d.length > 5) out += '-' + d.slice(5, 7);
+      if (d.length > 7) out += '-' + d.slice(7, 9);
+      input.value = out;
+      input.setCustomValidity('');
+    }
+
+    // =========================================================================
+    // FAQ
+    // =========================================================================
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const willOpen = content.classList.contains('hidden');
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        item.querySelector('.faq-content').classList.add('hidden');
+        item.querySelector('button').setAttribute('aria-expanded', 'false');
+        item.querySelector('button .material-symbols-outlined').classList.remove('rotate-180');
+      });
+      if (willOpen) {
+        content.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        button.querySelector('.material-symbols-outlined').classList.add('rotate-180');
+      }
+    }
+
+    function filterFaqQuestions() {
+      const q = $('faqSearchInput').value.toLowerCase().trim();
+      let visible = 0;
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        const match = item.textContent.toLowerCase().includes(q);
+        item.classList.toggle('hidden', !match);
+        if (match) visible++;
+      });
+      $('faqEmpty').classList.toggle('hidden', visible > 0);
+    }
+
+    // =========================================================================
+    // ARIZA YUBORISH
+    // =========================================================================
+    function telegramFallbackUrl(name, phone, service, comment) {
+      const text = `Assalomu alaykum! Saytdan ariza:\n👤 ${name || '—'}\n📞 ${phone || '—'}\n💼 ${service}\n📝 ${comment || '—'}`;
+      return `https://t.me/${CONFIG.TELEGRAM_USER}?text=${encodeURIComponent(text)}`;
+    }
+
+    function showLeadModal(ok, tgUrl) {
+      $('leadModalIconBox').className = 'w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-inner '
+        + (ok ? 'bg-secondary/15 text-secondary' : 'bg-error-container text-error');
+      $('leadModalIcon').textContent = ok ? 'check_circle' : 'error';
+      $('leadModalTitle').textContent = ok ? 'Arizangiz qabul qilindi!' : "Arizani yuborib bo'lmadi";
+      $('leadModalText').textContent = ok
+        ? "Rahmat! Mutaxassisimiz tez orada siz bilan bog'lanadi."
+        : `Aloqa vaqtincha mavjud emas. Ma'lumotlaringiz formada saqlab qolindi — Telegram orqali yuboring yoki ${CONFIG.PHONE_TEXT} raqamiga qo'ng'iroq qiling.`;
+      $('telegramDirectAfterLead').href = tgUrl;
+      $('telegramDirectAfterLead').classList.toggle('hidden', ok);
+      $('callAfterLead').classList.toggle('hidden', ok);
+      openModal('leadSuccessModal');
+    }
+
+    function showFormError(msg) {
+      const el = $('formError');
+      el.textContent = msg;
+      el.classList.toggle('hidden', !msg);
+    }
+
+    let submitting = false;
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      if (submitting) return;
+      showFormError('');
+
+      const phoneInput = $('leadPhone');
+      const digits = phoneDigits(phoneInput.value);
+      if (digits.length !== 9) {
+        phoneInput.setCustomValidity("Telefon raqamini to'liq kiriting: +998 (90) 123-45-67");
+        phoneInput.reportValidity();
+        return;
+      }
+      phoneInput.setCustomValidity('');
+
+      const name = $('leadName').value.trim();
+      const phone = '+998' + digits;
+      const service = $('serviceSelect').value;
+      const comment = $('leadComment').value.trim();
+      const honeypot = $('leadWebsite').value;
+      const tgUrl = telegramFallbackUrl(name, phoneInput.value, service, comment);
+
+      const btn = $('leadSubmitBtn');
+      submitting = true;
+      btn.disabled = true;
+      btn.classList.add('opacity-75', 'cursor-not-allowed');
+      $('leadSubmitText').textContent = 'Yuborilmoqda...';
+      $('leadSubmitIcon').textContent = 'hourglass_top';
+
+      let ok = false;
+      let serverMsg = '';
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 12000);
+      try {
+        const res = await fetch(CONFIG.API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, phone, service, comment, website: honeypot }),
+          signal: ctrl.signal
+        });
+        ok = res.ok;
+        if (!ok) {
+          try { serverMsg = (await res.json()).error || ''; } catch (_) { /* JSON emas */ }
+        }
+      } catch (err) {
+        console.error('Ariza yuborilmadi:', err);
+      } finally {
+        clearTimeout(timer);
+      }
+
+      submitting = false;
+      btn.disabled = false;
+      btn.classList.remove('opacity-75', 'cursor-not-allowed');
+      $('leadSubmitText').textContent = 'Yuborish va Bepul Maslahat Olish';
+      $('leadSubmitIcon').textContent = 'send';
+
+      if (ok) {
+        e.target.reset();
+        showLeadModal(true, tgUrl);
+      } else if (serverMsg && /raqam|ism|ko'p urinish/i.test(serverMsg)) {
+        showFormError(serverMsg); // foydalanuvchi tuzata oladigan xatolar
+      } else {
+        showLeadModal(false, tgUrl); // forma tozalanmaydi
+      }
+    }
+
+    function sendViaTelegramDirect() {
+      const name = $('leadName').value.trim();
+      const phone = $('leadPhone').value.trim();
+      const url = telegramFallbackUrl(name, phone, $('serviceSelect').value, $('leadComment').value.trim());
+      window.open(url, '_blank', 'noopener');
+    }
+
+    // =========================================================================
+    // MOBIL PASTKI NAVIGATSIYA: joriy bo'lim belgisi (scroll-spy)
+    // =========================================================================
+    function initScrollSpy() {
+      const links = Array.from(document.querySelectorAll('.mobile-nav-btn'));
+      const ids = links.map((a) => a.getAttribute('href').slice(1));
+      const update = () => {
+        let current = ids[0];
+        const y = window.scrollY + 140;
+        ids.forEach((id) => {
+          const el = $(id);
+          if (id !== 'asosiy' && el && el.offsetTop <= y) current = id;
+        });
+        links.forEach((a) => {
+          const active = a.getAttribute('href') === '#' + current;
+          a.classList.toggle('text-primary', active);
+          a.classList.toggle('font-bold', active);
+          a.classList.toggle('text-on-surface-variant', !active);
+          if (active) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+        });
+      };
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    }
+
+    // =========================================================================
+    // HAQIQIY QR-KOD (bot havolasi)
+    // =========================================================================
+    function initBotQr() {
+      const box = $('botQr');
+      if (!box || typeof QRCode === 'undefined') return;
+      box.innerHTML = '';
+      new QRCode(box, {
+        text: `https://t.me/${CONFIG.BOT_USER}?start=audit`,
+        width: 72, height: 72,
+        colorDark: '#131b2e', colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.M
+      });
+    }
+
+    // =========================================================================
+    // BOSHLANG'ICH HOLAT
+    // =========================================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.faq-item button').forEach((b) => b.setAttribute('aria-expanded', 'false'));
+      filterServices('all');
+      updateCalculator();
+      initScrollSpy();
+      initBotQr();
+      document.querySelectorAll('#companyTypeContainer button').forEach((b, i) => b.setAttribute('aria-pressed', String(i === 0)));
+    });
+  </script>
+
+</body>
+</html>
