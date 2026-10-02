@@ -37,8 +37,7 @@ const OWNER_ID = Number(process.env.OWNER_ID);
 const OWNER_NAME = process.env.OWNER_NAME || "Kamronbek";
 const PORT = Number(process.env.PORT) || 3005;
 const TRUST_PROXY = process.env.TRUST_PROXY === "1";
-const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ||
-  "https://halolhisobchi.uz,https://www.halolhisobchi.uz,http://localhost:3005,http://localhost:5500,http://127.0.0.1:5500,null")
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || "*")
   .split(",").map((s) => s.trim()).filter(Boolean);
 
 if (!BOT_TOKEN || !Number.isFinite(OWNER_ID) || OWNER_ID <= 0) {
@@ -897,10 +896,10 @@ function sendJson(res, status, obj, headers = {}) {
 
 const server = http.createServer((req, res) => {
   const origin = req.headers.origin;
-  const originOk = !origin || ALLOWED_ORIGINS.includes("*") || ALLOWED_ORIGINS.includes(origin);
-  const cors = originOk && origin
+  const originOk = !origin || ALLOWED_ORIGINS.includes("*") || ALLOWED_ORIGINS.includes(origin) || (origin && origin.includes("onrender.com"));
+  const cors = origin
     ? { "Access-Control-Allow-Origin": origin, Vary: "Origin", "Access-Control-Allow-Methods": "POST, OPTIONS", "Access-Control-Allow-Headers": "Content-Type" }
-    : {};
+    : { "Access-Control-Allow-Origin": "*" };
 
   if (req.method === "OPTIONS") {
     res.writeHead(originOk ? 204 : 403, cors);
